@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+	<!-- @author diogo.moreira -->
+	
+	<Loggers>
+		<logger name="br.edu.ifpb.padroes" level="DEBUG"/>
+		<Root level="WARN">
+			<AppenderRef ref="DeveloperFullConsole" />
+			<AppenderRef ref="DeveloperAsync" />
+		</Root>
+	</Loggers>
+
+	<Appenders>
+		<!-- Developer Appenders -->
+		<Console name="DeveloperFullConsole" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%-5p] - %c:%L - %m%n" />
+		</Console>
+		<File name="DeveloperFileAppender" fileName="logs/relatorio.log">
+			<Append>false</Append>
+			<BufferedIO>true</BufferedIO>
+			<PatternLayout pattern="[%d{dd/MM/yyyy HH:mm:ss,SSS}] [%-5p] - %c{2}:%L - %m%n" />
+		</File>
+		<Async name="DeveloperAsync" includeLocation="true">
+			<AppenderRef ref="DeveloperFileAppender" /> <!-- Set the desired appender -->
+		</Async>
+	</Appenders>
+	
+</Configuration>
