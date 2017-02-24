@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.edu.ifpb.ads.padroes.observer</groupId>
-	<artifactId>padroes-observer-exemple</artifactId>
+	<artifactId>padroes-observer-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
@@ -54,5 +54,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
+    <name>padroes-observer-example</name>
 </project>

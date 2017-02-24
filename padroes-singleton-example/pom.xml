@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.edu.ifpb.ads.padroes.singleton</groupId>
-	<artifactId>padroes-singleton-exemple</artifactId>
+	<artifactId>padroes-singleton-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <dependencies>
         <dependency>
@@ -12,4 +12,5 @@
             <type>jar</type>
         </dependency>
     </dependencies>
+    <name>padroes-singleton-example</name>
 </project>
